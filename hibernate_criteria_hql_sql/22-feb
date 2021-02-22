@@ -1,0 +1,81 @@
+SessionFactory
+	Session
+		-save
+		-update
+		-delete
+		-get
+		-createCriteria--select queries
+		
+Criteria :   session.createCriteria(Class class);
+	it is interface use for execute only select queries
+	
+	---all methods are static
+Restriction (I)
+	Restrictions(C)
+	
+--where clause
+	select * from employee where id=1 and name="admin";	
+	
+	gt()
+	lt()
+	equals()
+	isEmpty()
+	isNull()
+	eqIgnore
+	between
+	like
+	ilike
+	
+LogicalExpression
+	-and 
+	-or
+	
+disjunction()
+conjunction()		
+	
+Projection(I)
+	Projections	& aggregations--function
+	select name from
+	select min(id) from employee
+	-ResultSetTransformer
+		-alias to entity
+		-map to entity
+		-all
+			
+-----------------			
+criteria------>sql---execute---slower						
+-------------------------------------------		
+HQL : hibernte query lanaguage
+	-object oriented queries
+	- * not allow
+	-performance wise faster than criteria
+	- Query query=session.createQuery(hql);
+		
+-----------	
+SQL : select * from employee; (table name)
+HQL : from Employee; (Class name)
+
+SQL :  select name from employee where username="admin" and password="admin";
+HQL :  select name from Employee where userName=:un and password="admin";	
+
+---------------------------------------------
+SQL : SQLQuery squery=session.createSQLQuery(sql);		
+	--resultset --always--object--limitation is we can convert object to particular type 	
+		--resultSetTansform-	
+--------------------------------------------------------			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
