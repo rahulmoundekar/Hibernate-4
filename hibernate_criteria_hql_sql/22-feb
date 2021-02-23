@@ -64,6 +64,35 @@ SQL : SQLQuery squery=session.createSQLQuery(sql);
 		--resultSetTansform-	
 --------------------------------------------------------			
 			
+session :
+	-merge  --update
+		session1
+		session2   
+		
+	
+	-get	 to fetch particular row by using primary key 
+	
+		-eager
+		-db hit
+		-nullpointer exception
+	-load
+		-lazy
+		-proxy-session --then db hit
+		-Objectnot found exception	
+
+	-persist (return void)   ------save (return --serilizable id primary key)
+		-rdbms :
+			one to one
+		
+	-saveOrUpdate
+		-save()--- increment,identity
+			employee.setId(101); (assigned)
+		-update
+			
+
+	
+	
+	
 			
 			
 			
