@@ -1,0 +1,68 @@
+Hibernate :
+	-Reversed Engineering 
+	-
+	
+	
+Annotation :
+	avoid xml
+	
+	xml : slower
+	annotation : faster
+		interface :
+		
+		@target
+		@render
+	@interface Entity{
+
+	}	
+
+	JPA: Java persistent Api
+		
+	ORM :
+		cfg : configruation
+		
+		hbm : mapping
+			ORM
+		<hibernate-mapping
+			<class name="FQN" schema="clc"
+				id name="" column=""
+					genrerator
+				property		
+			
+			
+		@Entity	: it is indicate that your class is Entity or orm 
+		
+		@Table : indicate your class as table name
+		@Id : primary key
+		@column(name="sid")
+		@onetoone
+		@manytoone
+		@onetomany
+		@manytomany
+		@joincolumn
+		@joinTable
+		@nativeQueries
+		@nativeQuery
+		@primarykeyjoincolumn
+		@Embedded
+	
+@Entity
+@Table(name="TBL_EMPLOYEE")		
+class Employee{
+
+	@Id
+	@Column(name="id" unique=true)
+	private int id;
+	
+	@Column(name="name")
+	private String name;
+
+}		
+http://imagine-java.blogspot.com/
+
+
+
+
+
+
+
